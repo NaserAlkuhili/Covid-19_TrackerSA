@@ -14,6 +14,7 @@ const CityList = () => {
         getCasesByCity().then(json=>setData(json))
     })
     
+    
     return (
         <div>
             {data.map((item) => <CityCases cases={item.cases.toString()} city = {item.city.toString()}/>)}

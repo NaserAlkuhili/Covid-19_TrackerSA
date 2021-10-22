@@ -4,8 +4,6 @@ import "./App.css";
 import BarCharts from './components/BarCharts';
 import CityList from './components/CityList';
 import DailyCasesVsRecoveriesPie from './components/DailyCasesVsRecoveriesPie';
-// import { getCasesByCity } from './API/useAPI';
-import CityCases from './components/CityCases';
 
 
 
@@ -29,7 +27,6 @@ class App extends Component {
                         <DailyCasesVsRecoveriesPie style = {{width:400, height:400}}/>
                     </div>
                 </div>
-                {/* {this.state.data && this.state.data.map(a=> <CityCases cases = {a.cases} city = {a.city}/>)} */}
                 <CityList/>
             </div>
         );
