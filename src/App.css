@@ -36,3 +36,89 @@
     transform: rotate(360deg);
   }
 }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(64, 68, 75);
+}
+
+footer {
+  background-color: rgb(32, 34, 37);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 75px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.main_background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+.data {
+  text-align: center;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(32, 34, 37);
+  border-radius: 1em;
+}
+
+.main_title {
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(32, 34, 37);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flag {
+  width: 75px;
+  height: 50px;
+  border-radius: 22%;
+  padding: 1em;
+}
+.title {
+  color: white;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.icon {
+  padding: 1em;
+  color: white;
+}
+
+/* cityCases */
+.city_cases {
+  display: flex;
+  flex: 1;
+  background-color: rgb(32, 34, 37);
+  color: white;
+  width: max-content;
+  height: 75px;
+  border-radius: 10%;
+  border-style: groove;
+  border-color: black;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.city_cases_content {
+  margin-left: 5px;
+  margin-right: 5px;
+}
