@@ -13,6 +13,7 @@ import React from 'react';
 
 
 const CityCases = ({city, cases}) => {
+    
         return (
             <div className="city_cases">
                 <h1 className = "city_cases_content">{city}: </h1>

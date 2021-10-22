@@ -1,12 +1,19 @@
-import React, { Component } from 'react';
-import BarCharts from './components/BarCharts';
-import DailyCasesVsRecoveriesPie from './components/DailyCasesVsRecoveriesPie';
+import React, { Component} from 'react';
 import "./App.css";
+
+import BarCharts from './components/BarCharts';
+import CityList from './components/CityList';
+import DailyCasesVsRecoveriesPie from './components/DailyCasesVsRecoveriesPie';
+// import { getCasesByCity } from './API/useAPI';
+import CityCases from './components/CityCases';
 
 
 
 class App extends Component {
+
+
     render() {
+
         return (
             <div className = "main_background">
                 <h1 className = "main_title"> احصائيات كوفيد-19 في السعوديه <img src="/assets/SAFlag.png" alt="Saudi_flag" className = "flag"></img> </h1>
@@ -22,6 +29,8 @@ class App extends Component {
                         <DailyCasesVsRecoveriesPie style = {{width:400, height:400}}/>
                     </div>
                 </div>
+                {/* {this.state.data && this.state.data.map(a=> <CityCases cases = {a.cases} city = {a.city}/>)} */}
+                <CityList/>
             </div>
         );
     }
