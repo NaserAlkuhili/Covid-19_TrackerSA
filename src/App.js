@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import "./App.css";
+import { RiGoogleFill } from "react-icons/ri";
 
 import BarCharts from './components/BarCharts';
 import CityList from './components/CityList';
@@ -28,6 +29,10 @@ class App extends Component {
                     </div>
                 </div>
                 <CityList/>
+
+                <footer>
+                    <RiGoogleFill className="icon"/>
+                </footer>
             </div>
         );
     }

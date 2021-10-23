@@ -106,10 +106,10 @@ a {
 /* cityCases */
 .city_cases {
   display: flex;
-  flex: 1;
+  flex: 2 0 15%;
   background-color: rgb(32, 34, 37);
   color: white;
-  width: max-content;
+  /* width: 120px; */
   height: 75px;
   border-radius: 10%;
   border-style: groove;
@@ -121,4 +121,10 @@ a {
 .city_cases_content {
   margin-left: 5px;
   margin-right: 5px;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }

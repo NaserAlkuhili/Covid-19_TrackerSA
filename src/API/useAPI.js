@@ -31,12 +31,15 @@ const getRecoveriesFrom =  async (day) => {
 // https://datasource.kapsarc.org/api/records/1.0/search/?dataset=saudi-arabia-coronavirus-disease-covid-19-situation&q=date%3A%5B2021-10-13+TO+2021-10-14%5D&rows=60&sort=date&refine.daily_cumulative=Daily&refine.indicator=Cases
 
 const getCasesByCity =  async () => {
-    const todays_date = new Date().toISOString().slice(0, 8) + (Number(new Date().getDate())-1).toString();
-    const yesterdays_date = new Date().toISOString().slice(0, 8) + (Number(new Date().getDate()) - 2).toString();
+    const todays_date = new Date().toISOString().slice(0, 8) + (Number(new Date().getDate())).toString();
+    const yesterdays_date = new Date().toISOString().slice(0, 8) + (Number(new Date().getDate()) - 1).toString();
 
     var cityCases = []
     // https://datasource.kapsarc.org/api/records/1.0/search/?dataset=saudi-arabia-coronavirus-disease-covid-19-situation&q=date%3A%5B2021-10-20+TO+2021-10-21%5D&rows=67&sort=date&facet=city_en&refine.indicator=Cases&refine.daily_cumulative=Daily
     var URL = "https://datasource.kapsarc.org/api/records/1.0/search/?dataset=saudi-arabia-coronavirus-disease-covid-19-situation&q=date%3A%5B"+yesterdays_date+"+TO+"+todays_date+"%5D&rows=67&sort=date&facet=city_en&refine.indicator=Cases&refine.daily_cumulative=Daily"
+    console.log("today: " + todays_date)
+    console.log("yest: " + yesterdays_date)
+
     await fetch(URL).then(Response=>{
         return Response.json()
     }).then(data=>{
