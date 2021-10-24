@@ -1,9 +1,9 @@
 import React, { Component} from 'react';
 import "./App.css";
-import { RiGoogleFill } from "react-icons/ri";
+import { RiGoogleFill, RiTwitterFill, RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
 
 import BarCharts from './components/BarCharts';
-import CityList from './components/CityList';
+import RegionList from './components/RegionList';
 import DailyCasesVsRecoveriesPie from './components/DailyCasesVsRecoveriesPie';
 
 
@@ -28,10 +28,24 @@ class App extends Component {
                         <DailyCasesVsRecoveriesPie style = {{width:400, height:400}}/>
                     </div>
                 </div>
-                <CityList/>
+                <h1 className="main_title second">حالات كورونا اليوم لكل منطقه</h1>
+                <RegionList/>
 
                 <footer>
-                    <RiGoogleFill className="icon"/>
+                    <a href="mailto:k4gam3r@gmail.com"> {/* Email */}
+                        <RiGoogleFill className="icon" size = {45}/>
+                    </a>
+                    <a href="https://twitter.com/NasserAlkuhili"> {/* Twitter */}
+                        <RiTwitterFill className="icon" size = {45}/>
+                    </a>
+                    <a  href="https://github.com/NaserAlkuhili"> {/* Github */}
+                        <RiGithubFill className="icon" size = {45}/>
+                    </a>
+                    <a  href="https://www.linkedin.com/in/naser-alkuhili-b10461181/"> {/* Linkedin */}
+                        <RiLinkedinBoxFill className="icon" size = {45}/>
+                    </a>
+
+
                 </footer>
             </div>
         );
