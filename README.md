@@ -13,8 +13,8 @@
 
    <h3 align = 'center'>في حاله الضغط على الحالات اليوميه، سيظهر الرسم البياني الحالات اليوميه فقط في اخر ٣٠ يوم. والعكس صحيح لحالات الشفاء</h3>
     
-   <img width="470" height = "430" alt="Screen Shot 2021-10-24 at 6 28 24 PM" src="https://user-images.githubusercontent.com/61093450/138619582-7525b4fd-fd7a-45f8-b92d-d6677eccfe10.png">
-  <img width="470" height = "430" alt="Screen Shot 2021-10-24 at 6 28 48 PM" src="https://user-images.githubusercontent.com/61093450/138619595-5c9115b6-041f-4596-b8ae-888f49e80088.png">
+   <img width="470" height = "400" alt="Screen Shot 2021-10-24 at 6 28 24 PM" src="https://user-images.githubusercontent.com/61093450/138619582-7525b4fd-fd7a-45f8-b92d-d6677eccfe10.png">
+  <img width="470" height = "400" alt="Screen Shot 2021-10-24 at 6 28 48 PM" src="https://user-images.githubusercontent.com/61093450/138619595-5c9115b6-041f-4596-b8ae-888f49e80088.png">
 
 
 </div>
