@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import "/Users/naseralkuhili/covid-19tracker/src/App.css";
+import "./App.css";
 
 
 import { getCasesByRegion } from '../API/useAPI';
