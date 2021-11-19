@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import "/Users/naseralkuhili/covid-19tracker/src/App.css";
 
 
 import { getCasesByRegion } from '../API/useAPI';
@@ -27,12 +28,18 @@ const RegionList = () => {
     useEffect(()=>{
         getCasesByRegion().then(json=>setData(json))
     }, [])
+    console.log(data.length)
+    console.log(data)
     
     
     return (
-        <div className="row">
-            {data.map((item) => <RegionCases cases={item.cases.toString()} region = {regionTranslator[item.region.toString()]}/>)}
+        <div style ={{alignSelf:"center"}}>
+            {data.length !== 0 &&   <h1 className="main_title second">حالات كورونا اليوم لكل منطقه</h1>}
+            <div className="row">
+                {data.map((item) => <RegionCases cases={item.cases.toString()} region = {regionTranslator[item.region.toString()]}/>)}
+            </div>
         </div>
+
     )
 
 }

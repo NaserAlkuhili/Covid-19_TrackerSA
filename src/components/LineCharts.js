@@ -23,7 +23,7 @@ var recoveries_datesI = []
 
 
 
-const BarCharts = ({style}) => {
+const LineCharts = () => {
     const [cases, setCases] = useState()
     const [cases_dates, setCases_dates] = useState()
     
@@ -81,7 +81,7 @@ const BarCharts = ({style}) => {
     
 
     return (
-        <div style = {style}>
+        <div className="line_chart">
             <Line
                 data = {cases_data}
                 height={500}
@@ -94,4 +94,4 @@ const BarCharts = ({style}) => {
 
 
 
-export default BarCharts;
+export default LineCharts;

@@ -7,11 +7,11 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -110,6 +110,10 @@ a {
   color: white;
 }
 
+.pie_chart {
+  width: 400px;
+  height: 400px;
+}
 /* regionCases */
 .region_cases {
   display: flex;
@@ -134,4 +138,19 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 750px) {
+  .content {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+  }
+  .line_chart {
+    width: 350px;
+  }
+  .pie_chart {
+    width: 350px;
+    height: 350px;
+  }
 }

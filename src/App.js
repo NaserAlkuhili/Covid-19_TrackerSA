@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import "./App.css";
 import { RiGoogleFill, RiTwitterFill, RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
 
-import BarCharts from './components/BarCharts';
+import LineCharts from './components/LineCharts';
 import RegionList from './components/RegionList';
 import DailyCasesVsRecoveriesPie from './components/DailyCasesVsRecoveriesPie';
 
@@ -21,14 +21,14 @@ class App extends Component {
                 <div className = "content">
                     <div className="data">
                         <h1 className = "title">:حالات الشفاء و الاصابه في اخر 30 يوم</h1>
-                        <BarCharts />
+                        <LineCharts/>
                     </div>
                     <div className="data">
                         <h1 className = "title">:الشفاء اليوم vs الإصابه</h1>
-                        <DailyCasesVsRecoveriesPie style = {{width:400, height:400}}/>
+                        <DailyCasesVsRecoveriesPie/>
                     </div>
                 </div>
-                <h1 className="main_title second">حالات كورونا اليوم لكل منطقه</h1>
+
                 <RegionList/>
 
                 <footer>

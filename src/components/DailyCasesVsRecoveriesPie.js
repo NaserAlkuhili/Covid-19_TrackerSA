@@ -15,7 +15,7 @@ var recoveries_datesI = []
 
 
 
-const DailyCasesVsRecoveriesPie = ({style}) => {
+const DailyCasesVsRecoveriesPie = () => {
     const [cases, setCases] = useState()
     
     const [recoveries, setRecoveries] = useState()
@@ -59,7 +59,7 @@ const DailyCasesVsRecoveriesPie = ({style}) => {
 
     
     return (
-        <div style = {style}>
+        <div className = "pie_chart">
             <Pie
             data = {recoveries_data} 
             height = {500}
