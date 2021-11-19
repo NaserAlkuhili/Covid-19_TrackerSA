@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Pie} from "react-chartjs-2";
+import "./App.css";
+
 
 import {getCasesFrom, getRecoveriesFrom} from '../API/useAPI';
 
