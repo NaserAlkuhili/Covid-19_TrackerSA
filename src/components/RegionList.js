@@ -30,10 +30,9 @@ const RegionList = () => {
     }, [])
     console.log(data.length)
     console.log(data)
-    
-    
+
     return (
-        <div style ={{alignSelf:"center"}}>
+        <div style ={{flex:1, display:"flex", flexDirection:"column"}}>
             {data.length !== 0 &&   <h1 className="main_title second">حالات كورونا اليوم لكل منطقه</h1>}
             <div className="row">
                 {data.map((item) => <RegionCases cases={item.cases.toString()} region = {regionTranslator[item.region.toString()]}/>)}

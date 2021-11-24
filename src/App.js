@@ -17,7 +17,6 @@ class App extends Component {
             <div className = "main_background">
                 <h1 className = "main_title"> احصائيات كوفيد-19 في السعوديه <img src="/assets/SAFlag.png" alt="Saudi_flag" className = "flag"></img> </h1>
                 
-
                 <div className = "content">
                     <div className="data">
                         <h1 className = "title">:حالات الشفاء و الاصابه في اخر 30 يوم</h1>
@@ -28,9 +27,7 @@ class App extends Component {
                         <DailyCasesVsRecoveriesPie/>
                     </div>
                 </div>
-
                 <RegionList/>
-
                 <footer>
                     <a href="mailto:k4gam3r@gmail.com"> {/* Email */}
                         <RiGoogleFill className="icon" size = {45}/>
@@ -44,8 +41,6 @@ class App extends Component {
                     <a  href="https://www.linkedin.com/in/naser-alkuhili-b10461181/"> {/* Linkedin */}
                         <RiLinkedinBoxFill className="icon" size = {45}/>
                     </a>
-
-
                 </footer>
             </div>
         );

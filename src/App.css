@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -42,6 +36,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgb(64, 68, 75);
+  padding: 0;
+  margin: 0;
 }
 
 footer {
@@ -56,10 +52,12 @@ footer {
 a {
   text-decoration: none;
 }
+
 .main_background {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  vertical-align: middle;
 }
 
 .content {
@@ -85,6 +83,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .main_title.second {
@@ -141,6 +140,9 @@ a {
 }
 
 @media (max-width: 750px) {
+  h1 {
+    font-size: 20px;
+  }
   .content {
     flex-direction: column-reverse;
     display: flex;
@@ -152,5 +154,11 @@ a {
   .pie_chart {
     width: 350px;
     height: 350px;
+  }
+
+  .region_cases_content {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
   }
 }
