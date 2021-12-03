@@ -43,7 +43,7 @@ const DailyCasesVsRecoveriesPie = () => {
                 recoveries_datesI.push(e.date)
             })
             setRecoveries(recoveriesI)
-        })})
+        })}, [])
 
     
     //data for daily recoveries vs cases 

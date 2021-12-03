@@ -54,7 +54,7 @@ const LineCharts = () => {
             setRecoveries(recoveriesI)
         })
         
-    })
+    }, [])
     //Cases Line chart.
     const cases_data = {
         labels: cases_dates,
